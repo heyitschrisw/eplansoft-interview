@@ -25,7 +25,7 @@ function App() {
       >
           <Page pageNumber={pageNumber} scale={2.0} />
       </Document>
-      <Canvas style={{position: "relative", top: "0px", left: "0px", zIndex: 2}} />
+      <Canvas />
 
       <p>Page {pageNumber} of {numPages}</p>
     </div>
