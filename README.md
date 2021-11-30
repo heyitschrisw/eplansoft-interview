@@ -12,9 +12,9 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### Reading Files
-To read PDF files, insert pdf files to read into the 'public/sample' directory.
+To read PDF files, insert pdf files to read into the 'public' directory.
 
-Modify file path within the <Document /> component in App.js to read a specific pdf file.
+Modify file path within the <Document /> component in App.js to read a specific pdf file with 'public' as the root path.
 
 ### Features
 Generate rectangle annotators using the 'New' button on the top left corner.
