@@ -2,7 +2,9 @@
 
 In the project directory, you can run:
 
-### `yarn start`
+### Start Server
+
+#### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -15,4 +17,6 @@ To read PDF files, insert pdf files to read into the 'public/sample' directory.
 
 Modify file path within the <Document /> component in App.js to read a specific pdf file.
 
-Rectangle annotator can be dragged around the screen to highlight areas on the document.
+### Features
+
+Rectangle annotator can be resized and dragged around the screen to highlight areas on the document.
