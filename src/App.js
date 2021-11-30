@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import { Stage, Layer } from 'react-konva';
 import Canvas from './Canvas'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -23,9 +22,7 @@ function App() {
       >
           <Page pageNumber={pageNumber} scale={2.0} />
       </Document>
-
       <Canvas />
-
       <p style={{display: 'flex', justifyContent: 'center'}}>Page {pageNumber} of {numPages}</p>
     </div>
   );
