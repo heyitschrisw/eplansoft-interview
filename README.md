@@ -16,7 +16,8 @@ To read PDF files, insert pdf files to read into the 'public' directory.
 
 Modify file path within the `<Document />` component using 'file' property in App.js to read a specific pdf file with 'public' as the root path.
 
-##### `file='sample.pdf'` refers to `public/sample.pdf` directory
+#### Example
+`file='sample.pdf'` refers to `public/sample.pdf` directory
 
 ### Features
 Generate rectangle annotators using the 'New' button on the top left corner.
