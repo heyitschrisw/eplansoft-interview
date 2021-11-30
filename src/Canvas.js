@@ -2,21 +2,21 @@ import React, { useState } from 'react';
 import { Stage, Layer } from 'react-konva';
 import Rectangle from './Rectangle';
 
-const initialRectangles = [
-  {
-    x: 10,
-    y: 10,
-    width: 50,
-    height: 50,
-    stroke: 'red',
-    strokeWidth: 4,
-    id: 'rect1',
-  }
-];
-
 function Canvas() {
-  const [rectangles, setRectangles] = React.useState(initialRectangles);
-  const [selectedId, selectShape] = React.useState(null);
+  const [rectangles, setRectangles] = useState([]);
+  const [selectedId, selectShape] = useState(null);
+
+  const generateTriangle = () => {
+    setRectangles(rectangles.concat({
+      x: 10,
+      y: 10,
+      width: 50,
+      height: 50,
+      stroke: 'red',
+      strokeWidth: 4,
+      id: 'rect' + (rectangles.length + 1),
+    }))
+  }
 
   const checkDeselect = (e) => {
     // deselect when clicked on empty area
@@ -28,6 +28,7 @@ function Canvas() {
 
   return (
     <div style={{position: "absolute", top: "0px", left: "0px", zIndex: 2}} >
+      <button onClick={generateTriangle}>New</button>
       <Stage
         width={window.innerWidth}
         height={window.innerHeight}

@@ -1,11 +1,11 @@
-import React from 'react';
-import { Stage, Layer, Rect, Transformer } from 'react-konva';
+import React, { useEffect, useRef } from 'react';
+import { Rect, Transformer } from 'react-konva';
 
 const Rectangle = ({ shapeProps, isSelected, onSelect, onChange }) => {
-  const shapeRef = React.useRef();
-  const trRef = React.useRef();
+  const shapeRef = useRef();
+  const trRef = useRef();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isSelected) {
       // we need to attach transformer manually
       trRef.current.nodes([shapeRef.current]);

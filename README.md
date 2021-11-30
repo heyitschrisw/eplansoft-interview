@@ -1,8 +1,7 @@
 # PDF Reader and Annotator
 
-In the project directory, you can run:
-
 ### Start Server
+In the project directory, you can run:
 
 #### `yarn start`
 
@@ -18,5 +17,6 @@ To read PDF files, insert pdf files to read into the 'public/sample' directory.
 Modify file path within the <Document /> component in App.js to read a specific pdf file.
 
 ### Features
+Generate rectangle annotators using the 'New' button on the top left corner.
 
-Rectangle annotator can be resized and dragged around the screen to highlight areas on the document.
+Rectangle annotators can be resized and dragged around the screen to highlight areas on the document.

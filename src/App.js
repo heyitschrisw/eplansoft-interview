@@ -16,8 +16,6 @@ function App() {
 
   return (
     <div>
-      Hello World
-
       <Document
         file="/sample/sample.pdf"
         onLoadSuccess={onDocumentLoadSuccess}
@@ -25,9 +23,10 @@ function App() {
       >
           <Page pageNumber={pageNumber} scale={2.0} />
       </Document>
+
       <Canvas />
 
-      <p>Page {pageNumber} of {numPages}</p>
+      <p style={{display: 'flex', justifyContent: 'center'}}>Page {pageNumber} of {numPages}</p>
     </div>
   );
 }
